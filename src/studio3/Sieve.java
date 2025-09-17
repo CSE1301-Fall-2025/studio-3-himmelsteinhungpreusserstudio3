@@ -8,7 +8,8 @@ public class Sieve {
         int[] numb = new int[n];
         boolean[] myArray = new boolean [n];
         for (int i = 0; i < numb.length; i++){
-            numb[i] = 2 + i;
+            numb[i] = i;
+            myArray[i] = true;
         }
         for (int i = 2; i*i < n; i++){
             if (myArray[i] == true){
